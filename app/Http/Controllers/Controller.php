@@ -10,4 +10,22 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    public function homePage()
+    {
+    	$title = "Home Page";
+    	return view("welcome", [
+    		'title' => $title
+    	]);
+    }
+
+    public function signOut()
+    {
+    	echo "Registration screen";
+    }
+
+    public function signIn()
+    {
+    	echo "Login screen";
+    }
 }
