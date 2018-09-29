@@ -26,6 +26,6 @@ class Controller extends BaseController
 
     public function signIn()
     {
-    	echo "Login screen";
+    	return view("user.signIn");
     }
 }

@@ -15,3 +15,7 @@ Route::get("/", ["uses" => "Controller@homePage"]);
 //Route::get('/', function () {
 //    return view('welcome');
 //});
+
+// Routes to user auth
+
+Route::get("/login", ["uses" => "Controller@signIn"]);
