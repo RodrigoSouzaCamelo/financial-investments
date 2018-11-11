@@ -11,21 +11,30 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public function homePage()
+
+    public function homepage()
     {
-    	$title = "Home Page";
-    	return view("welcome", [
-    		'title' => $title
-    	]);
+        $variavel = "Homepage do sitema de gestão para grupos de investimento";
+
+        return view('welcome', [
+            'title' => $variavel
+        ]);
     }
 
-    public function signOut()
+    public function cadastar()
     {
-    	echo "Registration screen";
+        echo "Tela de cadastro";
     }
 
-    public function signIn()
+
+    /**
+     * method to user login VIEW
+     * ========================================================================
+     */
+    public function fazerLogin()
     {
-    	return view("user.signIn");
+        return view('user.login');
     }
+
+
 }
