@@ -13,7 +13,7 @@
 Route::get('/', ['uses' => 'Controller@homepage']);
 Route::get('/cadastro', ['uses' => 'Controller@cadastar']);
 
-
+Auth::routes();
 /**
  * Routes to user auth
  * ========================================================================
