@@ -37,6 +37,11 @@ Route::resource('instituition', 'InstituitionsController');
 Route::resource('group', 'GroupsController');
 Route::resource('instituition.product', 'ProductsController');
 
+Route::get('/logout', function(){
+    Auth::logout();
+    return Redirect::to('/login');
+ });
+
 
 #Route::get('group', 'GroupsController@index');
 #Route::post('group', 'GroupsController@store');

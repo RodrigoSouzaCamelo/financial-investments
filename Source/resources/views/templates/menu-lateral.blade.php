@@ -42,5 +42,11 @@
 				<h3>Extrato</h3>
 			</a>
 		</li>
+		<li>
+			<a href="{{ route('logout') }}">
+				<i class="fa fa-sign-out"></i>
+				<h3>Logout</h3>
+			</a>
+		</li>
 	<ul>
 </nav>
