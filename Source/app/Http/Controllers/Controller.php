@@ -6,6 +6,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Illuminate\Support\Facades\Auth;
 
 class Controller extends BaseController
 {
@@ -14,11 +15,10 @@ class Controller extends BaseController
 
     public function homepage()
     {
-        $variavel = "Homepage do sitema de gestão para grupos de investimento";
-
-        return view('welcome', [
-            'title' => $variavel
-        ]);
+        if(Auth::check())
+            return view('user.dashboard');
+        else
+            return view('user.login');
     }
 
     public function cadastar()

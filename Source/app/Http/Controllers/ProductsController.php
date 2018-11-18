@@ -28,6 +28,7 @@ class ProductsController extends Controller
 
     public function __construct(ProductRepository $repository, ProductValidator $validator)
     {
+        $this->middleware('auth');
         $this->repository = $repository;
         $this->validator  = $validator;
     }

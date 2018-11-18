@@ -29,6 +29,7 @@ class MovimentsController extends Controller
 
     public function __construct(MovimentRepository $repository, MovimentValidator $validator)
     {
+		$this->middleware('auth');
         $this->repository = $repository;
         $this->validator  = $validator;
     }

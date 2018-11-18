@@ -22,6 +22,7 @@ class InstituitionsController extends Controller
 
     public function __construct(InstituitionRepository $repository, InstituitionValidator $validator, InstituitionService $service)
     {
+        $this->middleware('auth');
         $this->repository   = $repository;
         $this->validator    = $validator;
         $this->service      = $service;
