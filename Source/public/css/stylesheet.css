@@ -215,3 +215,7 @@ form.form-padrao label.submit input{
 .default-table tbody tr{
 	height: 20px;
 }
+
+.default-table tbody td{
+	text-align: center;
+}
