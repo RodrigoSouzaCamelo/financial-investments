@@ -2,6 +2,4 @@
 @include('templates.formulario.input', ['input' => 'name', 'attributes' => ['placeholder' => 'Nome']])
 @include('templates.formulario.input', ['input' => 'phone', 'attributes' => ['placeholder' => 'Telefone']])
 @include('templates.formulario.input', ['input' => 'email', 'attributes' => ['placeholder' => 'E-mail']])
-@include('templates.formulario.select', ['label' => "gênero", 'select' => 'gender', 'data' => ['M' => 'Masculino', 'F' => 'Feminino'], 'value' => ['M', 'F'], 'attributes' => ['placeholder' => "Gênero"]])
-@include('templates.formulario.input', ['input' => 'birth', 'attributes' => ['placeholder' => 'Data de nascimento']])
 @include('templates.formulario.password', ['input' => 'password', 'attributes' => ['placeholder' => 'Senha']])
