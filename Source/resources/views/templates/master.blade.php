@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
 	<title>Investindo</title>
 	<link rel="stylesheet" href="{{ asset('css/stylesheet.css') }}">
-	<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	<link href="{{ asset('css/fredoka-one.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/font-awesome-4.7.0/css/font-awesome.css') }}" rel="stylesheet">
 	@yield('css-view')
 </head>
 <body>
