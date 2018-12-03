@@ -21,6 +21,13 @@ class InstituitionService
 	{
 		try
 		{
+			if(empty($data->name)) {
+				return [
+					'success' 	=> true,
+					'messages' 	=> "Preencha o campo nome!",
+					'data' 	  	=> $data,
+				];
+			}
 			$this->validator->with($data)->passesOrFail(ValidatorInterface::RULE_CREATE);
 			$instituition = $this->repository->create($data);
 
